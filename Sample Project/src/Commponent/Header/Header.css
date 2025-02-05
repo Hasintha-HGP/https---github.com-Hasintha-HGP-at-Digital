@@ -1,0 +1,97 @@
+.Header{
+    background-color: var(--primary-color);
+    color:white;
+    height: 100%;
+}
+
+.Header1{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.Header1 ul{
+    margin-top: 10px;
+    display: flex;
+}
+
+.Header1 li a{
+    color: white;
+    text-decoration: none;
+}
+
+.Header1 li a:hover{
+    color: var(--error-color);
+}
+
+.Header1 li{
+    display: inline;
+    list-style: none;
+    margin-right: 40px;
+}
+
+.Header1 img{
+    width: 100%;
+    height: 100%;
+    padding-left: 70px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    height: 4px;
+    width: 100%;
+    background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .Header1 {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .Header1 ul {
+        display: none;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .Header1 li {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .Header1 img {
+        width: 60%;
+        padding-left: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .Header1.active ul {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Header1 li {
+        margin-right: 10px;
+    }
+
+    .Header1 img {
+        width: 50%;
+    }
+}

@@ -1,0 +1,139 @@
+
+.footer {
+    background-color:var(--analogous-color1);
+    color: #fff; 
+    padding: 40px 0; 
+    font-family: Arial, sans-serif;
+  }
+  
+  .footercontainer {
+    display: flex; 
+    justify-content: space-between; 
+    max-width: 1500px; 
+    margin-left: 90px;
+  }
+  
+  .footerSection1 {
+    width: 98%; 
+   
+    margin-right: 20px;
+  }
+  .footerSection2 {
+    width: 30%; 
+    
+    margin-left: 80px;
+    margin-right: 90px;
+  }
+  .footerSection3 {
+    width: 30%; 
+    margin-left: 80px;
+    margin-right: 30px;
+    padding: 0; 
+  }
+  
+   .footerSection2  ul li h3 {
+    color:white; 
+    font-size: 1.3rem; 
+    margin-bottom: 15px;
+  }
+  .footerSection3  ul li h3 {
+    color:white; 
+    font-size: 1.3rem; 
+    margin-bottom: 15px;
+  }
+  
+  .footerSection1  p {
+    font-size: 1.2rem;
+    line-height: 1.5; 
+    color: white;
+    margin: 5px 0;
+  }
+  .footerSection2  p {
+    font-size: 1rem;
+    line-height: 1.5; 
+    color: white;
+    margin: 5px 0;
+  }
+  .footerSection3  p {
+    font-size: 1rem;
+    line-height: 1.5; 
+    color: white;
+    margin: 5px 0;
+  }
+  
+  .footerSection1 .footerSection2 .footerSection3 ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footerSection1 .footerSection2 .footerSection3 ul li {
+    margin-bottom: 10px; 
+  }
+  
+  .footer img {
+    max-width: 250px; 
+    margin-bottom: 20px; 
+  }
+  
+  .footerSection1 .footerSection2 .footerSection3 ul li p {
+    font-size: 1rem;
+    color: #fff; 
+  }
+  .footerbottom{
+    margin-top: 30px;
+  }
+  .footerbottom p{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .footerbottom hr{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (max-width: 768px) {
+    .footercontainer {
+      flex-direction: column; 
+    }
+  
+    .footerSection1,
+    .footerSection2,
+    .footerSection3 {
+      width: 100%; 
+      margin-right: 0;
+      margin-left: 0;
+      padding: 0 0 20px 0;
+    }
+  
+    .footer img {
+      max-width: 200px; 
+    }
+  
+    .footerbottom hr {
+      width: 80%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .footercontainer {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .footerSection1 p,
+    .footerSection2 p,
+    .footerSection3 p {
+      font-size: 0.9rem;
+    }
+  
+    .footer img {
+      max-width: 180px;
+    }
+  
+    .footerbottom hr {
+      width: 90%;
+    }
+  }
+ 
+  
